@@ -8,7 +8,7 @@ Use the build argument `OPENTHESO_VERSION` to set the Opentheso2 version. Defaul
 ```
 docker build \
 --build-arg OPENTHESO_VERSION=22.09 \
--t Opentheso2 .
+-t opentheso22-09 .
 ```
 
 ## Build with docker-compose
