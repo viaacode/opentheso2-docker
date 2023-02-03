@@ -1,7 +1,8 @@
 FROM tomcat:9.0
 MAINTAINER Evolved Binary
 
-ADD https://github.com/miledrousset/Opentheso2/releases/download/v22.11/opentheso2-22.11.war /usr/local/tomcat/webapps/opentheso2.war
+ARG OPENTHESO_VERSION=23.01.01
+ADD https://github.com/miledrousset/Opentheso2/releases/download/v${OPENTHESO_VERSION}/opentheso2-${OPENTHESO_VERSION}.war /usr/local/tomcat/webapps/opentheso2.war
 
 RUN  apt-get update -y && \
      apt-get upgrade -y && \

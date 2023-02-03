@@ -21,6 +21,8 @@ services:
     build: 
       context: .
       dockerfile: ./Dockerfile
+      args:
+        OPENTHESO_VERSION: "23.01.01"
     image: miledrousset/opentheso2
     restart: always
     depends_on:
